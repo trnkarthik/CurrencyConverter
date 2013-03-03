@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CurrencyCal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Value">No of Units</string>
+    <string name="FromValue">From Currency</string>
+    <string name="ToCurrency">To Currency</string>
+    <string name="ResultValue">Result Value</string>
+    <string name="blank">-</string>
+    <string name="GetValue">Get Currency</string>
+
+</resources>

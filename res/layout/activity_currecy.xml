@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEECF"
+    tools:context=".Currecy" >
+
+    <RelativeLayout
+        android:id="@+id/layout_fromCurrency"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners_white" >
+
+        <TextView
+            android:id="@+id/tv_FromCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="@string/FromValue" />
+
+       
+        <Spinner
+           android:id="@+id/sp_FromCurrency"
+           android:layout_width="200px"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/layout_toCurrency"
+       android:layout_width="300dp"
+       android:layout_height="50dp"
+       android:layout_alignLeft="@+id/layout_fromCurrency"
+       android:layout_below="@+id/layout_fromCurrency"
+       android:layout_marginTop="18dp"
+       android:background="@drawable/rounded_corners_white" >
+
+       <TextView
+           android:id="@+id/tv_ToCurrency"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="18dp"
+           android:text="@string/ToCurrency" />
+
+       <Spinner
+           android:id="@+id/sp_ToCurrency"
+           android:layout_width="200px"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true" />
+
+   </RelativeLayout>
+   
+   
+    <RelativeLayout
+       android:id="@+id/layout_UnitInputs"
+       android:layout_width="300dp"
+       android:layout_height="50dp"
+       android:layout_alignLeft="@+id/layout_toCurrency"
+       android:layout_below="@+id/layout_toCurrency"
+       android:layout_marginTop="18dp"
+       
+       android:background="@drawable/rounded_corners_white" >
+<EditText
+           android:id="@+id/ed_value"
+           android:layout_width="200px"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:inputType="numberDecimal" />
+        
+        
+       <TextView
+           android:id="@+id/tv_Units"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="18dp"
+           android:text="@string/ToCurrency" />
+ 
+
+           
+      
+   </RelativeLayout>
+
+    <RelativeLayout
+       android:id="@+id/layout_UnitInputss"
+       android:layout_width="300dp"
+       android:layout_height="50dp"
+       android:layout_alignLeft="@+id/layout_toCurrency"
+       android:layout_below="@+id/layout_toCurrency"
+       android:layout_marginTop="18dp"
+       android:background="@drawable/rounded_corners_white" >
+
+       <TextView
+           android:id="@+id/tv_res"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="18dp"
+           android:text="@string/ToCurrency" />
+       <TextView
+           android:id="@+id/tv_Result"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="18dp"
+           android:text="@string/ToCurrency" />
+
+      
+
+       </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnGetCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layout_UnitInputs"
+        android:layout_below="@+id/layout_UnitInputs"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/rounded_corners_white"
+        android:padding="10dp"
+        android:text="@string/GetValue" />
+
+</RelativeLayout>
